@@ -20,6 +20,7 @@ const Movie = ({ data }: Document) => {
             </Head>
             <RichText render={data.title} />
             <RichText render={data.synopsis} />
+            <strong>{data.year}</strong>
         </div>
     )
 }
