@@ -38,11 +38,6 @@ export const getStaticProps = useGetStaticProps({
     client: Client(),
     type: 'movie',
     uid: ({ params }: any) => params.uid,
-    apiParams({ params }: any) {
-        return {
-            uid: params.uid,
-        }
-    },
     getStaticPropsParams: {
         revalidate: 5,
     }
